@@ -11,6 +11,3 @@ QuickTile is a modern, intuitive dashboard designed for fast access to your esse
 - **Responsive Design:** Seamlessly work across devices—from desktops to mobiles.
 
 QuickTile transforms your digital workspace by putting what you need at your fingertips, ensuring efficiency and simplicity in every interaction.
-
-
-HGFJGFJFJ
