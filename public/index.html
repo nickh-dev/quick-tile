@@ -3,7 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quick Tile</title>
+    <title>Web App Environment</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .app-container {
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .app-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+      .app-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 18px;
+        transition: background 0.3s ease;
+      }
+      .app-icon:hover {
+        background: #0056b3;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="app-container">
+      <h1>Web App Launcher</h1>
+      <div class="app-grid">
+        <a href="apps/calculator.html" class="app-icon">🖩 Calculator</a>
+        <a href="apps/timer.html" class="app-icon">⏳ Timer</a>
+        <a href="apps/calendar.html" class="app-icon">📅 Calendar</a>
+      </div>
+    </div>
+  </body>
 </html>
