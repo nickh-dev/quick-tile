@@ -4,57 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web App Environment</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
-      .app-container {
-        text-align: center;
-        background: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        margin-bottom: 20px;
-      }
-      .app-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-      }
-      .app-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #007bff;
-        color: white;
-        text-decoration: none;
-        padding: 15px;
-        border-radius: 8px;
-        font-size: 18px;
-        transition: background 0.3s ease;
-      }
-      .app-icon:hover {
-        background: #0056b3;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/assets/styles/main.css" />
   </head>
   <body>
     <div class="app-container">
-      <h1>Hey Bro!</h1>
-      <h1>Privet</h1>
+      <h1>QuickTile</h1>
       <div class="app-grid">
-        <a href="apps/calculator.html" class="app-icon">🖩 Calculator</a>
-        <a href="apps/timer.html" class="app-icon">⏳ Timer</a>
-        <a href="apps/calendar.html" class="app-icon">📅 Calendar</a>
+        <a href="apps/calculator.html" class="card"
+          ><i class="fa-solid fa-calculator"></i>Calculator</a
+        >
+        <a href="apps/timer.html" class="card"
+          ><i class="fa-solid fa-hourglass-half"></i>Timer</a
+        >
+        <a href="apps/calendar.html" class="card"
+          ><i class="fa-solid fa-calendar"></i>Calendar</a
+        >
       </div>
     </div>
   </body>
