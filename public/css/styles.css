@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Подключаем шрифт Montserrat для всего документа */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Стили для всплывающего окна регистрации */
+.popup-registration-form,
+.popup-login-form {
+  position: fixed;
+  top: 90px; /* Немного ниже навбара (который имеет высоту примерно 60px) */
+  right: 30px; /* Отступ от правого края */
+  width: 300px; /* Ширина окна, можно изменить по необходимости */
+  z-index: 50; /* Поверх остальных элементов */
+}
