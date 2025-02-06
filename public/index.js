@@ -33,3 +33,29 @@ loginBtn.addEventListener("click", () => {
     loginForm.classList.add("max-h-0", "opacity-0");
   }
 });
+
+// Получаем элементы
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalClose = document.querySelector(".modal-close");
+const blocks = document.querySelectorAll(".grid div");
+
+// Открытие модального окна при клике на любой блок
+blocks.forEach((block) => {
+  block.addEventListener("click", () => {
+    modalTitle.textContent = block.querySelector("h3").textContent;
+    modal.classList.add("active");
+  });
+});
+
+// Закрытие модального окна
+modalClose.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+// Закрытие при клике вне окна
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.classList.remove("active");
+  }
+});

@@ -6,7 +6,7 @@
 
 /* Подключаем шрифт Montserrat для всего документа */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Стили для всплывающего окна регистрации */
@@ -17,4 +17,58 @@ body {
   right: 30px; /* Отступ от правого края */
   width: 300px; /* Ширина окна, можно изменить по необходимости */
   z-index: 50; /* Поверх остальных элементов */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 40px; /* Увеличьте размер шрифта */
+  color: #333; /* Цвет для лучшей видимости */
+  background: transparent; /* Уберите фон */
+  border: none; /* Уберите рамку */
+  padding: 0;
+}
+.modal-close:hover {
+  color: #e74c3c; /* Цвет при наведении */
+}
+
+/* Когда модальное окно активно */
+.modal.active {
+  visibility: visible;
+  opacity: 1;
 }
