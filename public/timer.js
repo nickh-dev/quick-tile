@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     (block) => block.querySelector("h3")?.textContent.trim() === "Timer"
   );
 
+  if (!timerBlock) return; // Если блока нет, выходим
+
   const modal = document.getElementById("modal");
   const modalContent = document.querySelector(".modal-content");
 
